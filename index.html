@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atul Kumar Singh | Backend Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 antialiased">
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold gradient-text tracking-tighter">AKS.DEV</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0f172a] p-6 space-y-4 border-b border-white/10">
+            <a href="#about" class="block">About</a>
+            <a href="#skills" class="block">Skills</a>
+            <a href="#projects" class="block">Projects</a>
+            <a href="#contact" class="block">Contact</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center pt-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-blue-400 font-mono mb-4 block">Hi, my name is</span>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Atul Kumar Singh</h1>
+                <h2 class="text-2xl md:text-4xl font-semibold text-slate-400 mb-8">I build scalable backend systems.</h2>
+                <p class="text-slate-400 max-w-lg mb-10 leading-relaxed">
+                    A Backend Developer and BCA student at Meghnad Saha Institute of Technology, specializing in Java, Spring Boot, and high-performance API architectures.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition">View My Work</a>
+                    <a href="#contact" class="border border-slate-700 hover:bg-slate-800 px-8 py-3 rounded-lg font-medium transition">Get In Touch</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <img id="profile-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80" alt="Atul Kumar Singh" class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-[#0f172a]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <span class="text-blue-400 font-mono mr-4 text-xl">01.</span> About Me
+            </h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="md:col-span-2 text-slate-400 space-y-4">
+                    <p>I am a final-year BCA student with a deep passion for backend architecture and performance optimization. Currently serving as a <span class="text-white">Backend Developer at Megatronix</span>, I manage data systems for East India's largest techfest, PARIDHI.</p>
+                    <p>I thrive on solving complex problems, whether it's reducing API latency by 98% or designing secure microservices using Docker and JWT. My goal is to build robust software that handles scale gracefully.</p>
+                    <p>Education: Bachelor of Computer Applications, Meghnad Saha Institute Of Technology (2022-2025). Current CGPA: 7.40/10</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="text-white font-semibold mb-4">Quick Info</h3>
+                    <ul class="text-sm space-y-3 text-slate-400">
+                        <li><i class="fas fa-location-dot mr-2 text-blue-400"></i> Kolkata, India</li>
+                        <li><i class="fas fa-graduation-cap mr-2 text-blue-400"></i> MSIT (BCA)</li>
+                        <li><i class="fas fa-envelope mr-2 text-blue-400"></i> cocatulll@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-900/50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-16 text-center">Technical Arsenal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass p-8 rounded-2xl hover:border-blue-500/50 transition group">
+                    <i class="fas fa-code text-3xl text-blue-400 mb-4"></i>
+                    <h3 class="text-white font-bold mb-2">Languages</h3>
+                    <p class="text-sm text-slate-400">Java, Python, JavaScript, SQL, C</p>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:border-blue-500/50 transition">
+                    <i class="fas fa-layer-group text-3xl text-blue-400 mb-4"></i>
+                    <h3 class="text-white font-bold mb-2">Frameworks</h3>
+                    <p class="text-sm text-slate-400">Spring Boot, Spring Security, Node.js, Express</p>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:border-blue-500/50 transition">
+                    <i class="fas fa-database text-3xl text-blue-400 mb-4"></i>
+                    <h3 class="text-white font-bold mb-2">Databases</h3>
+                    <p class="text-sm text-slate-400">MySQL, PostgreSQL, MongoDB</p>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:border-blue-500/50 transition">
+                    <i class="fas fa-cloud text-3xl text-blue-400 mb-4"></i>
+                    <h3 class="text-white font-bold mb-2">DevOps</h3>
+                    <p class="text-sm text-slate-400">Docker, Git, Railway, Vercel, Cloudinary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-16 flex items-center">
+                <span class="text-blue-400 font-mono mr-4 text-xl">02.</span> Featured Projects
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="glass rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-blue-900 to-slate-800 p-8 flex items-center justify-center">
+                        <i class="fas fa-portal-enter text-6xl text-white/20"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">Paridhi Portal 2025</h3>
+                        <p class="text-slate-400 text-sm mb-4">API response time optimized by 98% (from 600ms to 6ms). Featuring RBAC with 5+ roles.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">Spring Boot</span>
+                            <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">Docker</span>
+                            <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">MySQL</span>
+                        </div>
+                        <div class="mt-auto flex space-x-4">
+                            <a href="https://github.com/AtulSingh11-0" target="_blank" class="text-slate-400 hover:text-white"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-purple-900 to-slate-800 p-8 flex items-center justify-center">
+                        <i class="fas fa-book text-6xl text-white/20"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">Book Store App</h3>
+                        <p class="text-slate-400 text-sm mb-4">Scalable RESTful APIs handling 10,000+ requests/day with Swagger documentation and 99.9% uptime.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20">MongoDB</span>
+                            <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20">Swagger</span>
+                            <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20">Java</span>
+                        </div>
+                        <div class="mt-auto flex space-x-4">
+                            <a href="https://github.com/AtulSingh11-0" target="_blank" class="text-slate-400 hover:text-white"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass rounded-2xl overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gradient-to-br from-emerald-900 to-slate-800 p-8 flex items-center justify-center">
+                        <i class="fas fa-comments text-6xl text-white/20"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">Real-time Chat App</h3>
+                        <p class="text-slate-400 text-sm mb-4">Socket.io implementation supporting 200+ concurrent users with 80ms reduction in message latency.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] px-2 py-1 bg-emerald-500/10 text-emerald-400 rounded border border-emerald-500/20">Socket.io</span>
+                            <span class="text-[10px] px-2 py-1 bg-emerald-500/10 text-emerald-400 rounded border border-emerald-500/20">Node.js</span>
+                            <span class="text-[10px] px-2 py-1 bg-emerald-500/10 text-emerald-400 rounded border border-emerald-500/20">Express</span>
+                        </div>
+                        <div class="mt-auto flex space-x-4">
+                            <a href="https://github.com/AtulSingh11-0" target="_blank" class="text-slate-400 hover:text-white"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-blue-400 font-mono mb-4">03. What's Next?</h2>
+            <h3 class="text-4xl font-bold text-white mb-6">Get In Touch</h3>
+            <p class="text-slate-400 mb-12">I'm currently looking for new opportunities in backend development. Whether you have a question or just want to say hi, my inbox is always open!</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <a href="mailto:cocatulll@gmail.com" class="border border-blue-500/50 text-blue-400 px-10 py-4 rounded-lg hover:bg-blue-500/10 transition flex items-center">
+                    <i class="fas fa-envelope mr-3"></i> Say Hello
+                </a>
+                <div class="flex space-x-6 text-2xl">
+                    <a href="https://github.com/AtulSingh11-0" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/atul-singhll" target="_blank" class="text-slate-400 hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <p class="mt-20 text-slate-500 text-sm font-mono tracking-widest">+91 9123766255</p>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-white/5 text-center text-slate-500 text-sm">
+        <p>Built with Tailwind 4 & Passion by Atul Kumar Singh</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const githubUser = "AtulSingh11-0";
+            const profileImg = document.getElementById('profile-img');
+            
+            // Attempt to get GitHub profile image
+            fetch(`https://api.github.com/users/${githubUser}`)
+                .then(response => {
+                    if(response.ok) return response.json();
+                    throw new Error('User not found');
+                })
+                .then(data => {
+                    if(data.avatar_url) profileImg.src = data.avatar_url;
+                })
+                .catch(err => {
+                    // Fallback to Unsplash drawing image if API fails
+                    profileImg.src = "https://images.unsplash.com/illustration-1701765034638-34857b2b6271?q=80&w=800";
+                });
+        });
+    </script>
+</body>
+</html>
